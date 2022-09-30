@@ -46,7 +46,7 @@ SwiperCore.use([FreeMode, Navigation, Pagination, Scrollbar, A11y]);
 })
 export class HomeComponent implements OnInit, AfterViewInit {
   @ViewChild('svg', { read: ElementRef }) svg!: ElementRef<HTMLElement>;
-  @ViewChild('swiper', { static: false }) swiper?: SwiperComponent;
+  @ViewChild('swiper', { static: false }) swiper!: SwiperComponent;
 
   slides = ['Slide 1', 'Slide 2', 'Slide 3', 'Slide 4', 'Slide 5', 'Slide 6']
   paths: string[] = [];
